@@ -1,0 +1,118 @@
+baseURL = "https://androizzka.github.io"
+title = "Androizzka"
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "ExampleSite"
+description = "ExampleSite description"
+author = "Yudi iskandar"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+defaultTheme = "light"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+disableSpecial1stPost = false
+comments = true
+hidemeta = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = ""
+  favicon16x16 = ""
+  favicon32x32 = ""
+  apple_touch_icon = ""
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]    
+  text = "Androizzka"
+  icon = ""
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = true
+  title = "Hi.. i'm Yudi iskandar"
+  subtitle = "Fake programmer ala ala. Having interests learning in Android and Linux"
+  imageUrl = "images/profil.jpg"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = ""
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "About Me"
+    url = "about"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+  name = "Instagram"
+  url = "https://instagram.com/iskandaryudi_"
+
+  [[params.socialIcons]]
+  name = "Telegram"
+  url = "https://t.me/androizzka"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/androizzka"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "archive"
+name = "Archives"
+url = "/archives/"
+weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 20
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
